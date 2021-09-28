@@ -24,5 +24,7 @@ $router->group(['prefix' => 'api'], function ($router) {
     $router->post('logout', 'AuthController@logout');
     $router->post('refresh', 'AuthController@refresh');
     $router->post('me', 'AuthController@me');
+    $router->post('create_food','AuthController@create_food');
+    $router->get('find_food/{id}','AuthController@find_food');
 
 });

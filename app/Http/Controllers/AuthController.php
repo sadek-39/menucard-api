@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Food;
 use Illuminate\Support\Facades\Hash;
 class AuthController extends Controller
 {
@@ -74,7 +75,23 @@ class AuthController extends Controller
     {
         return $this->respondWithToken(auth()->refresh());
     }
+    public function create_food(Request $request)
+    {
+        if(auth()){
+            $food=Food::create($request->all());
+        }
+        
+        
+        return response()->json("food created");
+    }
+    public function find_food($id)
+    {
+        if(auth()){
+            $food_list=Food::where('user_id',$id)->get();
 
+        }
+        return response()->json($food_list);
+    }
     /**
      * Get the token array structure.
      *
