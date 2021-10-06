@@ -22,3 +22,9 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+//heroku db info
+"dbname=dhv3v4gnf05h3 host=ec2-34-194-123-31.compute-1.amazonaws.com port=5432 user=roaykxdzggreou password=06e3fd5cd74ee1bc6c45fcd1cc4e2a5107c5e0df9234ede0ac7f0e89f8c4d7f3 sslmode=require"
+Connection URL:
+   postgres://roaykxdzggreou:06e3fd5cd74ee1bc6c45fcd1cc4e2a5107c5e0df9234ede0ac7f0e89f8c4d7f3@ec2-34-194-123-31.compute-1.amazonaws.com:5432/dhv3v4gnf05h3 
