@@ -20,6 +20,7 @@ class CreateFoodTable extends Migration
             $table->string('food_details');
             $table->string('food_status');
             $table->integer('food_price');
+            $table->binary('food_image');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
